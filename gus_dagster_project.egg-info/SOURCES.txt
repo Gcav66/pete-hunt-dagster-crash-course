@@ -4,6 +4,7 @@ setup.cfg
 setup.py
 gus_dagster_project/__init__.py
 gus_dagster_project/repository.py
+gus_dagster_project/resources.py
 gus_dagster_project.egg-info/PKG-INFO
 gus_dagster_project.egg-info/SOURCES.txt
 gus_dagster_project.egg-info/dependency_links.txt
