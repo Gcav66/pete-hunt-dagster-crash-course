@@ -28,3 +28,8 @@ jobs:
       - name: Run smoke tests
         run: |
           pytest gus_dagster_project_tests
+      
+      # Run our unit tests
+      - name: Run unit tests
+        run: |
+          dagster job execute -f gus_dagster_project/repository.py --job daily_refresh
