@@ -5,6 +5,10 @@ on:
   pull_request:
     branches:
       - main
+
+env:
+  VCS_ACCESS_TOKEN: ${{ secrets.VCS_ACCESS_TOKEN }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,3 +32,8 @@ jobs:
       - name: Run smoke tests
         run: |
           pytest gus_dagster_project_tests
+      
+      # Run our unit tests
+      - name: Run unit tests
+        run: |
+          dagster job execute -f gus_dagster_project/repository.py --job daily_refresh
