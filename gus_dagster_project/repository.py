@@ -21,7 +21,7 @@ def gus_dagster_project():
             daily_schedule,
             with_resources(
                 load_assets_from_package_module(assets),
-                {"github_api": github_api.configured({"access_token": {"env": "GITHUB_ACCESS_TOKEN"}})},
+                {"github_api": github_api.configured({"access_token": {"env": "VCS_ACCESS_TOKEN"}})},
             ),
     ]
 
