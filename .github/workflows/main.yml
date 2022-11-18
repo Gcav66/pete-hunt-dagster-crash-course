@@ -28,3 +28,7 @@ jobs:
       - name: Run smoke tests
         run: |
           pytest gus_dagster_project_tests
+      # Run pipeline
+      - name: Run integration test
+        run: |
+          dagster job execute -f gus_dagster_project/repository.py --job daily_refresh
