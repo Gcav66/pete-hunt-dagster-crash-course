@@ -1,6 +1,6 @@
 # gus_dagster_project
 
-Copied From [Pete's Crash Course](https://dagster.io/blog/dagster-crash-course-oct-2022))
+Copied From [Pete's Crash Course](https://dagster.io/blog/dagster-crash-course-oct-2022)
 
 This is a [Dagster](https://dagster.io/) project scaffolded with [`dagster project scaffold`](https://docs.dagster.io/getting-started/create-new-project).
 
